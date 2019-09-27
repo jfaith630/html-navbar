@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="nav--desktop"> <!--Div for entire navigation bar.-->
+      <div class="mobile-wrapper"> <!--Div that is referenced in order to change content arrangement based on if user is on mobile or desktop?-->
+        <div class="header-cart__wrapper hidden-lg"> <!--Is this a div referencing a hidden cart icon?-->
+          <a href="/cart" class="CartToggle header-cart"><i class="icon icon-ra_bag"></i></a>
+          <span class="header-cart__bubble cartCount has-items cartCount-updater  hidden-count">0</span>
+        </div>
+        <div class="logo-wrapper "> <!--This div houses the logo at the top left of the page.-->
+            <h1 class="h4 header-logo" itemscope="" itemtype="http://schema.org/Organization"> <!--I think <h1> is used here to give the page semantic value.-->
+              <a href="/" itemprop="url"><i class="icon icon-ra_primary-logo"></i></a> <!-- Not sure what <i> tag is but, but <a> tag makes the logo a clickable link.-->
+            </h1>
+        </div>
+        <a href="" class="menuToggle header-hamburger"></a> <!--I guess this could toogle the icon to a hamburger menu instead if this were on mobile?-->
+      </div>
+      <div class="header-menu nav-wrapper"> <!--This div houses the navigation bar items section. (Logo not included.)-->
+        <ul class="main-menu accessibleNav"> <!--This groups these nav bar items under a <ul> I believe because it is a good practice for accessibility.-->
+        <li class="grandparent  kids-4"> <!--List index item for "Shop".-->
+          <a href="#" class="nav-link" id="Shop">Shop</a> <!--Clickable "Shop" text.-->
+          <a href="#" class="nav-carat"><span class="plus">+</span><span class="minus">-</span></a> <!--Not sure what is going on here...-->
+            <div class="main-menu-dropdown"> <!-- This must have something to do with the menu that drops down when you hover over "Shop".-->
+              <ul class="main-menu-dropdown--list"> <!--This starts the list of items that appear on the hover menu.-->
+                <li aria-haspopup="true"> <!--List index item for hover menu.-->
+                    <ul class="collection-nav--child"> <!--This starts another list of of items that appear in the first column of the hover menu.-->
+                      <li class="collection-nav--child-link"><h5><a href="/collections/all">All Collections</a></h5>
+                      </li> <!--List index item for first column of hover menu.-->
+                      <li class="collection-nav--child-link"><h5><a href="/collections/new-arrivals">New Arrivals</a></h5>
+                      </li> <!--List index item for first column of hover menu.-->
+                      <li class="collection-nav--child-link"><h5><a href="/collections/bedding">Bedding</a></h5> <!--List index item for first column of hover menu (includes link).-->
+                      <ul class="collection-nav--grandchild"> <!--Another list within a list within a list!-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/duvets">Duvets</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/quilts">Coverlets + Quilts</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/pillowcases">Pillowcases</a></li> <!--List index item.-->
+                      </ul>
+                      </li>
+                    </ul>
+                </li>
+                <li aria-haspopup="true"> <!--List index item for hover menu.-->
+                    <ul class="collection-nav--child"> <!--This starts another list of of items that appear in the second column of the hover menu.-->
+                      <li class="collection-nav--child-link"><h5><a href="/collections/fabric-by-the-yard">Fabric</a></h5> <!--List index item for second column of hover menu (includes link).-->
+                      <ul class="collection-nav--grandchild"> <!--Another list within a list within a list!-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/fabric-by-the-yard/Printed">Printed</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/fabric-by-the-yard/Woven">Woven</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/embroidered-fabrics">Embroidered</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/swatch-sets">Swatch Sets</a></li> <!--List index item.-->
+                      </ul>
+                      </li>
+                      <li class="collection-nav--child-link"><h5><a href="/collections/table-linens">Dining</a></h5> <!--List index item for second column of hover menu (includes link).-->
+                      <ul class="collection-nav--grandchild"> <!--Another list within a list within a list!-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/table-linens">Table Linens</a></li> <!--List index item.-->
+                      </ul>
+                      </li>
+                    </ul>
+                </li>
+                <li aria-haspopup="true"> <!--List index item for hover menu.-->
+                    <ul class="collection-nav--child"> <!--This starts another list of of items that appear in the third column of the hover menu.-->
+                      <li class="collection-nav--child-link"><h5><a href="/collections/wallpapers">Wallpaper</a></h5> <!--List index item for third column of hover menu (includes link).-->
+                      </li>
+                      <li class="collection-nav--child-link"><h5><a href="/collections/accessories-gift">Accessories + Gifts</a></h5> <!--List index item for third column of hover menu (includes link).-->
+                      <ul class="collection-nav--grandchild"> <!--Another list within a list within a list!-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/books">Books</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/products/gift-card">Gift Card</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/zip-pouches">Zip Pouches</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="http://rebeccaatwood.com/apps/giftregistry">Gift Registry</a></li> <!--List index item.-->
+                      </ul>
+                      </li>
+                    </ul>
+                </li>
+                <li aria-haspopup="true"> <!--List index item for hover menu.-->
+                    <ul class="collection-nav--child"> <!--This starts another list of of items that appear in the fourth column of the hover menu.-->
+                      <li class="collection-nav--child-link"><h5><a href="/collections/pillows">Pillows</a></h5> <!--List index item for fourth column of hover menu (includes link).-->
+                      <ul class="collection-nav--grandchild"> <!--Another list within a list within a list!-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/pillows/Hand-Dyed">Hand Dyed</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/pillows/Printed">Printed</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/pillows/Woven">Woven</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/embroidered-pillows/Hand-Embroidered">Embroidered</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/products/custom-pillow">Custom</a></li> <!--List index item.-->
+                      </ul>
+                      </li>
+                      <li class="collection-nav--child-link"><h5><a href="https://rebeccaatwood.com/collections/sale">Sale</a></h5> <!--List index item for fourth column of hover menu (includes link).-->
+                      <ul class="collection-nav--grandchild"> <!--Another list within a list within a list!-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/end-of-roll-sale/sale">Fabric by the Yard</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/pillows/sale">Pillows</a></li> <!--List index item.-->
+                          <li class="collection-nav--grandchild-link"><a href="/collections/screen-printed-wallpaper/sale">Wallpaper</a></li> <!--List index item.-->
+                      </ul>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+            </div> <!--End menu drop-down div-->
+        </li>
+        <li class="child  kids-0"> <!--List index item for "About" with link.-->
+          <a href="/pages/about-us" class="nav-link" id="About">About</a>
+        </li>
+        <li class="child  kids-0"> <!--List index item for "Process" with link.-->
+          <a href="/pages/process" class="nav-link" id="Process">Process</a>
+        </li>
+        <li class="child  kids-0"> <!--List index item for "Blog" with link.-->
+          <a href="/blogs/from-the-studio" class="nav-link" id="Blog">Blog</a>
+        </li>
+        <li class="child  kids-0"> <!--List index item for "Books" with link.-->
+          <a href="/pages/book" class="nav-link" id="Books">Books</a>
+        </li>
+        <li class="child  kids-0"> <!--List index item for "Showroom" with link.-->
+          <a href="/pages/visit-us" class="nav-link" id="Showroom">Showroom</a>
+        </li>
+        <li class="child  kids-0"> <!--List index item for "Contacts" with link.-->
+          <a href="/pages/contact" class="nav-link" id="Contact">Contact</a>
+        </li>
+          <li class="cart-text-link"> <!--List index item for "Bag" with link.-->
+            <a href="/cart" class="CartToggle">Bag<span class=" hidden-count " id="nav-cartCountDesktop">(0)</span></a> <!--Looks like there is functionality for an "items in bag" counter here.-->
+          </li>
+        </ul>
+      </div> <!--End nav bar items div.-->
+    </div> <!---End full navigation bar div.-->
+  </body>
+</html>
